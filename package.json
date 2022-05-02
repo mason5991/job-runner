@@ -1,0 +1,67 @@
+{
+  "name": "job-runner",
+  "version": "1.0.0",
+  "private": true,
+  "author": "mason5991",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bull": "^3.22.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "ioredis": "^4.27.3",
+    "mongoose": "^5.12.12",
+    "lodash": "^4.17.21"
+  },
+  "scripts": {
+    "start": "cross-env QUEUE_LOG=debug nodemon --watch '*.ts' --exec ts-node src/index.ts",
+    "build": "cross-env GENERATE_SOURCEMAP=false tsc",
+    "test": "jest --forceExit --detectOpenHandles --coverage --verbose --passWithNoTests",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --fix",
+    "prod": "NODE_ENV=production node src/index.js"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/bull": "^3.15.1",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^14.17.0",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^26.6.3",
+    "jest-html-reporters": "^2.1.6",
+    "jest-sonar-reporter": "^2.0.0",
+    "msw": "^0.29.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.0",
+    "supertest": "^6.1.3",
+    "ts-jest": "^26.5.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "jestSonar": {
+    "reportPath": "reports/jest",
+    "reportFile": "jest-report.xml",
+    "indent": 2
+  }
+}

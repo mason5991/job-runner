@@ -1,0 +1,17 @@
+{
+  "queues": {
+    "scheduler": {
+      "redis": {
+        "host": "localhost",
+        "port": 6379,
+        "db": 1
+      },
+      "jobs": {
+        "delay": {
+          "processor": "processors/delay.processor.js"
+        }
+      }
+    }
+  },
+  "opts": {}
+}

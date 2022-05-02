@@ -1,0 +1,81 @@
+openapi: 3.1.0
+info:
+  title: Job runner
+  description: API services for Job runner
+  version: 1.0.0
+servers:
+  - url: localhost:4001
+    description: Job runner
+tags:
+  - name: system
+    description: System 
+paths:
+  /version:
+    get:
+      tags:
+        - system
+      summary: Get system version No.
+      description: Get system version No.
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  message:
+                    type: string
+                  result:
+                    type: object
+                    properties:
+                      packageVersion:
+                        type: string
+              example:
+                success: true
+                message: Success.
+                result:
+                  packageVersion: 1.0.0
+components:
+  schemas:
+    unauthorizedError:
+      type: object
+      properties:
+        success:
+          type: boolean
+        errCode:
+          type: string
+        message:
+          type: string
+      example:
+        success: false
+        errCode: UnauthorizedActionError
+        message: Unauthorized action.
+    error:
+      type: object
+      properties:
+        success:
+          type: boolean
+        errCode:
+          type: string
+        message:
+          type: string
+      example:
+        success: false
+        errCode: ErrorCode
+        message: Error message of corresponding error code.
+    systemError:
+      type: object
+      properties:
+        success:
+          type: boolean
+        errCode:
+          type: string
+        message:
+          type: string
+      example:
+        success: false
+        errCode: ServerError
+        message: Server Error.

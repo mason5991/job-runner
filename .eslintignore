@@ -1,0 +1,16 @@
+# don't ever lint node_modules
+node_modules
+# don't lint build output (make sure it's set to your correct build folder name)
+dist
+build
+public
+# don't lint nyc coverage output
+coverage
+docs
+k8s
+reports
+
+nightwatch.conf.js
+jest.config.js
+cucumber.conf.js
+selenium.conf.js

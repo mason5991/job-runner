@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "airbnb-typescript/base"
+    // "eslint:recommended",
+    // "plugin:@typescript-eslint/recommended",
+    // "plugin:prettier/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "rules": {
+    "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "semi": ["warn", "always"],
+    "import/no-named-as-default-member": 0,
+    "implicit-arrow-linebreak": 0,
+    "no-console": 0,
+    "import/extensions": 0,
+    "object-curly-spacing": 0,
+    "space-infix-ops": 0,
+    "no-underscore-dangle": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-filename-extension": 0,
+    "linebreak-style": 0,
+    "prefer-arrow-callback": 0,
+    "func-names": 0,
+    "object-curly-newline": 0,
+    "import/no-anonymous-default-export": 0,
+    "no-undef": 0,
+    "import/no-extraneous-dependencies": 0,
+    "@typescript-eslint/dot-notation": 0,
+    "operator-linebreak": 0,
+    "import/no-named-as-default": 0,
+    "no-confusing-arrow": 0,
+    "import/no-cycle": 1,
+    "@typescript-eslint/no-unused-vars": 1
+  },
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "UnknownQueue": {
+    "code": 400,
+    "message": "Unknown queue."
+  },
+  "UnknownUiid": {
+    "code": 400,
+    "message": "Unknown UI id."
+  },
+  "UnknownFeatureName": {
+    "code": 400,
+    "message": "Unknown feature name"
+  },
+  "FailToRunTest": {
+    "code": 400,
+    "message": "Fail to run test."
+  }
+}

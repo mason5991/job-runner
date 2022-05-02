@@ -1,0 +1,26 @@
+# Docker
+Dockerfile
+Dockerfile.build
+
+# Gitlab
+.gitignore
+.gitlab-ci.yml
+
+# local files
+node_modules/
+.vscode/
+build/
+docs/
+k8s/
+env/
+tests/
+coverage/
+reports/
+.releaserc.yml
+dangerfile.js
+jest.config.js
+sonar-project.properties
+cucumber.conf.js
+nightwatch.conf.js
+*.log
+README.md

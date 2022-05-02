@@ -1,0 +1,14 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "debug.javascript.autoAttachFilter": "disabled",
+  "window.zoomLevel": 0,
+  "editor.minimap.maxColumn": 80,
+  "typescript.preferences.quoteStyle": "single",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "javascript.preferences.quoteStyle": "single",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+}
